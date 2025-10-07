@@ -37,7 +37,8 @@ import (
 //////////////////////////////////////////////////////////////////////////////
 // $upload                                                                  //
 //////////////////////////////////////////////////////////////////////////////
-const IMAGE_UPLOAD_MAX_CHUNK = 512
+//const IMAGE_UPLOAD_MAX_CHUNK = 512
+const IMAGE_UPLOAD_MAX_CHUNK = 176
 const IMAGE_UPLOAD_MIN_1ST_CHUNK = 32
 const IMAGE_UPLOAD_STATUS_MISSED = -1
 const IMAGE_UPLOAD_CHUNK_MISSED_WM = -1

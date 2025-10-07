@@ -23,6 +23,12 @@
   <img src="https://github.com/apache/mynewt-newtmgr/actions/workflows/build.yml/badge.svg">
 <a/>
 
+# STL Newtmgr176
+Newtmgr176 is a customised version of Newtmgr for the Sensor Technologies Sureline Relay Bluetooth Controller.
+It uses a reduced image upload chunk size of 176 bytes instead of the default 512 bytes. This is required
+because the commands are sent via an SPI link with maximum message length of 255 bytes and some Newtmgr message
+overhead is required.
+
 # Newtmgr
 
 Newt Manager (newtmgr) is the application tool that enables a user to communicate with and manage
@@ -33,9 +39,9 @@ published at http://mynewt.apache.org/latest/os/modules/devmgmt/newtmgr.html
 
 ### Building
 
-Build the newtmgr tool as follows:
+Build the newtmgr176 tool as follows:
 
-1. Unpack newtmgr source.
-2. Rename resulting `apache-mynewt-newtmgr-1.9.0` directory to `$GOPATH/src/mynewt.apache.org/newtmgr`
-3. `cd $GOPATH/src/mynewt.apache.org/newtmgr/newtmgr`
-4. `GO111MODULE=on go build`
+1. Clone this repository
+2. In the repository directory, cd newtmgr
+3. `GO111MODULE=on go build`
+4. `mv newtmgr newtmgr176'
